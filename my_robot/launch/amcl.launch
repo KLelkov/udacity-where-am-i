@@ -13,19 +13,26 @@
     <param name="global_frame_id" value="map"/>
     <!-- Parameters setup -->
     <param name="min_particles" value="100"/>
-    <param name="max_particles" value="10000"/>
+    <param name="max_particles" value="2000"/>
     <param name="initial_cov_xx" value="25.0"/>
     <param name="initial_cov_yy" value="25.0"/>
-    <param name="initial_cov_aa" value="5.0"/>
+    <param name="initial_cov_aa" value="4.0"/>
     <param name="laser_min_range" value="0.25"/>
-    <param name="laser_max_beams" value="180"/>
-    <param name="laser_z_hit" value="0.5"/>
-    <param name="odom_alpha1" value="0.3"/>
-    <param name="laser_sigma_hit" value="0.1"/>
+    <param name="laser_max_beams" value="60"/>
+    <param name="laser_z_hit" value="1.1"/>
+    <param name="odom_alpha1" value="0.03"/>
+    <param name="odom_alpha2" value="0.06"/>
+    <param name="odom_alpha3" value="0.03"/>
+    <param name="odom_alpha4" value="0.06"/>
+    <param name="laser_z_rand" value="0.03"/>
+    <param name="update_min_d" value="0.25"/>
+    <param name="update_min_a" value="0.5"/>
 
     <!-- Initial parameters -->
     <param name="initial_pose_x" value="0.0"/>
     <param name="initial_pose_y" value="0.0"/>
+    <!-- Let's set the wrong value to see how the robot recovers -->
+    <param name="initial_pose_a" value="0.0"/>
   </node>
 
   <!-- Move Base (needed only for navigation stack)-->

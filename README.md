@@ -19,7 +19,7 @@ roslaunch my_robot amcl.launch
 ```
 And you're good to go!
 
-You can control the robot by creating 2DNavigation goal in Rvis, but keep in mind that because of the steering wheels the robot cant turn in place, so allow some transitional movement as well.
+You can control the robot by creating 2DNavigation goal in Rviz.
 
 You can also run keyboard teleop node to control the robot manualy with
 ```
@@ -33,8 +33,3 @@ The robot starts in the hallway, so it is hard to locolize it right away. But as
 ### Known Issues
 #### Gazebo crash
 Sometimes gazebo just crashes - simply relaunch it.
-#### Robot isn't moving
-The robot's motors are controlled through PID controller. So allow the robot some time to get moving after it detects the white ball. This wind-up time can also be increased based on your GPU power, so wait up to one minute - the robot wont disappoint you :)
-If the issue persist - restart the Gazebo
-#### Robot is moving on its own
-This is some kind of gazebo error. You should close the program, kill all Gazebo instances and relaucnh the program.
