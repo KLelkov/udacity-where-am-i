@@ -10,15 +10,21 @@ from catkin_ws directory. This should build all the packages and Ackermann steer
 
 ### How to use
 First you need to launch the world simulation with
-    'roslaunch my_robot world.launch'
+```
+roslaunch my_robot world.launch
+```
 Then you need to launch AMCL localization node with
-    'roslaunch my_robot amcl.launch'
+```
+roslaunch my_robot amcl.launch
+```
 And you're good to go!
 
 You can control the robot by creating 2DNavigation goal in Rvis, but keep in mind that because of the steering wheels the robot cant turn in place, so allow some transitional movement as well.
 
 You can also run keyboard teleop node to control the robot manualy with
-    'rosrun teleop_twist_keyboard teleop_twist_keyboard'
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard
+```
 
 
 The robot starts in the hallway, so it is hard to locolize it right away. But as soon as the robot enters one of the rooms localization solution should converge quickly!
