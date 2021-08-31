@@ -3,9 +3,9 @@
 
 ### How to install
 Simply put all three packages to the catkin_ws/src directory and run
-'''
+```
 catkin_make
-'''
+```
 from catkin_ws directory. This should build all the packages and Ackermann steering plugin without problems!
 
 ### How to use
