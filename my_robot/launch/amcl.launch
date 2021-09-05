@@ -19,12 +19,13 @@
     <param name="initial_cov_aa" value="4.0"/>
     <param name="laser_min_range" value="0.25"/>
     <param name="laser_max_beams" value="60"/>
-    <param name="laser_z_hit" value="1.1"/>
-    <param name="odom_alpha1" value="0.03"/>
-    <param name="odom_alpha2" value="0.06"/>
-    <param name="odom_alpha3" value="0.03"/>
-    <param name="odom_alpha4" value="0.06"/>
-    <param name="laser_z_rand" value="0.03"/>
+    <param name="laser_z_hit" value="0.77"/>
+    <param name="laser_z_rand" value="0.33"/>
+    <param name="odom_alpha1" value="0.004"/>
+    <param name="odom_alpha2" value="0.01"/>
+    <param name="odom_alpha3" value="0.004"/>
+    <param name="odom_alpha4" value="0.01"/>
+    
     <param name="update_min_d" value="0.25"/>
     <param name="update_min_a" value="0.5"/>
 
@@ -32,7 +33,7 @@
     <param name="initial_pose_x" value="0.0"/>
     <param name="initial_pose_y" value="0.0"/>
     <!-- Let's set the wrong value to see how the robot recovers -->
-    <param name="initial_pose_a" value="0.0"/>
+    <param name="initial_pose_a" value="-1.57"/>
   </node>
 
   <!-- Move Base (needed only for navigation stack)-->
