@@ -14,9 +14,9 @@
     <!-- Parameters setup -->
     <param name="min_particles" value="100"/>
     <param name="max_particles" value="2000"/>
-    <param name="initial_cov_xx" value="25.0"/>
-    <param name="initial_cov_yy" value="25.0"/>
-    <param name="initial_cov_aa" value="4.0"/>
+    <param name="initial_cov_xx" value="1.5"/>
+    <param name="initial_cov_yy" value="1.5"/>
+    <param name="initial_cov_aa" value="1.0"/>
     <param name="laser_min_range" value="0.25"/>
     <param name="laser_max_beams" value="60"/>
     <param name="laser_z_hit" value="0.77"/>
